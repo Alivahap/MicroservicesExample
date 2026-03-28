@@ -7,6 +7,9 @@ using Microsoft.EntityFrameworkCore;
 using ProductService.Application.Features.Products.Commands;
 using ProductService.Infrastructure.Events;
 using ProductService.Application.Events;
+using Microsoft.Extensions.Caching.Distributed;
+using StackExchange.Redis;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -27,6 +30,12 @@ builder.Services.AddDbContext<ProductDbContext>(options =>
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 builder.Services.AddScoped<IEventPublisher, EventPublisher>();
+
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = "localhost:6379"; // Redis port
+    options.InstanceName = "ProductService_";
+});
 
 var app = builder.Build();
 

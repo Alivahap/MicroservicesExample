@@ -61,6 +61,14 @@
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[10.0.0, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[10.0.5, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.12.8, )"
             }
           },
           "imports": [
@@ -233,7 +241,7 @@
             },
             "StackExchange.Redis": {
               "target": "Package",
-              "version": "[2.12.4, )"
+              "version": "[2.12.8, )"
             }
           },
           "imports": [

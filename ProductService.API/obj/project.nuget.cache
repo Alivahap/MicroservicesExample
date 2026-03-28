@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OPDaFqGg35c=",
+  "dgSpecHash": "ysEaRS07OT4=",
   "success": true,
   "projectFilePath": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.API\\ProductService.API.csproj",
   "expectedPackageFiles": [
@@ -71,7 +71,7 @@
     "C:\\Users\\Azeze\\.nuget\\packages\\serilog.sinks.console\\6.1.1\\serilog.sinks.console.6.1.1.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\serilog.sinks.debug\\3.0.0\\serilog.sinks.debug.3.0.0.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\serilog.sinks.file.7.0.0.nupkg.sha512",
-    "C:\\Users\\Azeze\\.nuget\\packages\\stackexchange.redis\\2.12.4\\stackexchange.redis.2.12.4.nupkg.sha512",
+    "C:\\Users\\Azeze\\.nuget\\packages\\stackexchange.redis\\2.12.8\\stackexchange.redis.2.12.8.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",

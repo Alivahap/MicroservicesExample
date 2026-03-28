@@ -1185,7 +1185,7 @@
           }
         }
       },
-      "StackExchange.Redis/2.12.4": {
+      "StackExchange.Redis/2.12.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
@@ -1841,7 +1841,9 @@
         "dependencies": {
           "MediatR": "11.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "10.0.0",
-          "ProductService.Domain": "1.0.0"
+          "Microsoft.Extensions.Caching.StackExchangeRedis": "10.0.5",
+          "ProductService.Domain": "1.0.0",
+          "StackExchange.Redis": "2.12.8"
         },
         "compile": {
           "bin/placeholder/ProductService.Application.dll": {}
@@ -4045,10 +4047,10 @@
         "pipelines.sockets.unofficial.nuspec"
       ]
     },
-    "StackExchange.Redis/2.12.4": {
-      "sha512": "KNyzLp0aTcvWSxnbS6rCxX+2e+Q3goXhW80Iu7dwMkCQbENkoBw418I/UpgIxGzmS4gV10a5CdfdY4O0tO9Nrg==",
+    "StackExchange.Redis/2.12.8": {
+      "sha512": "I2x/MZ+I0YR2KYYOtlIaEq0Thd+Uhioao6BIaEs+U1MeGkbJF+peLtoZucJwHmfrFxMDXAzWOZrLnOQqPgyGvA==",
       "type": "package",
-      "path": "stackexchange.redis/2.12.4",
+      "path": "stackexchange.redis/2.12.8",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4065,7 +4067,7 @@
         "lib/net8.0/StackExchange.Redis.xml",
         "lib/netstandard2.0/StackExchange.Redis.dll",
         "lib/netstandard2.0/StackExchange.Redis.xml",
-        "stackexchange.redis.2.12.4.nupkg.sha512",
+        "stackexchange.redis.2.12.8.nupkg.sha512",
         "stackexchange.redis.nuspec"
       ]
     },
@@ -5322,7 +5324,7 @@
       "Microsoft.Extensions.Configuration.Json >= 10.0.5",
       "ProductService.Application >= 1.0.0",
       "ProductService.Domain >= 1.0.0",
-      "StackExchange.Redis >= 2.12.4"
+      "StackExchange.Redis >= 2.12.8"
     ]
   },
   "packageFolders": {
@@ -5414,7 +5416,7 @@
           },
           "StackExchange.Redis": {
             "target": "Package",
-            "version": "[2.12.4, )"
+            "version": "[2.12.8, )"
           }
         },
         "imports": [

@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using ProductService.Application.Features.Products.Commands;
-
+using ProductService.Application.Features.Products.Queries;
 namespace ProductService.API.Controllers
 {
     [ApiController]
@@ -21,5 +21,14 @@ namespace ProductService.API.Controllers
             var id = await _mediator.Send(command);
             return Ok(id);
         }
+	
+
+	[HttpGet]
+	public async Task<IActionResult> GetAll()
+	{
+		var query = new GetProductsQuery();
+		var products = await _mediator.Send(query);
+		return Ok(products);
+	}
     }
 }

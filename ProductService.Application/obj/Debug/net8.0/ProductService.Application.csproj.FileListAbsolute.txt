@@ -13,3 +13,4 @@ C:\Users\Azeze\source\repos\Microservices\ProductService.Application\obj\Debug\n
 C:\Users\Azeze\source\repos\Microservices\ProductService.Application\obj\Debug\net8.0\refint\ProductService.Application.dll
 C:\Users\Azeze\source\repos\Microservices\ProductService.Application\obj\Debug\net8.0\ProductService.Application.pdb
 C:\Users\Azeze\source\repos\Microservices\ProductService.Application\obj\Debug\net8.0\ref\ProductService.Application.dll
+C:\Users\Azeze\source\repos\Microservices\ProductService.Application\obj\Debug\net8.0\ProductService.Application.sourcelink.json

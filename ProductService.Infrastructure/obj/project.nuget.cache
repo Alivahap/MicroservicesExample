@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "45AbsA3/PM4=",
+  "dgSpecHash": "i04/WkrDSCQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Infrastructure\\ProductService.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -60,7 +60,7 @@
     "C:\\Users\\Azeze\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
-    "C:\\Users\\Azeze\\.nuget\\packages\\stackexchange.redis\\2.12.4\\stackexchange.redis.2.12.4.nupkg.sha512",
+    "C:\\Users\\Azeze\\.nuget\\packages\\stackexchange.redis\\2.12.8\\stackexchange.redis.2.12.8.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",

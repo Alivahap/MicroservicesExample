@@ -9,3 +9,4 @@ C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0
 C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\refint\ProductService.Domain.dll
 C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.pdb
 C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\ref\ProductService.Domain.dll
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.sourcelink.json

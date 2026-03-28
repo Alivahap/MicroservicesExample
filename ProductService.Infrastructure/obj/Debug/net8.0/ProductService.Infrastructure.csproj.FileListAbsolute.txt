@@ -17,3 +17,4 @@ C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debu
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.pdb
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.genruntimeconfig.cache
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ref\ProductService.Infrastructure.dll
+C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.sourcelink.json
