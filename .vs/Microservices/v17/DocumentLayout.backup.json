@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Azeze\\source\\repos\\Microservices\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5A18EAB1-65B7-4072-8091-EC872BB72276}|ProductService.Domain\\ProductService.Domain.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A18EAB1-65B7-4072-8091-EC872BB72276}|ProductService.Domain\\ProductService.Domain.csproj|solutionrelative:productservice.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A987CCF4-8441-40C1-980F-D95B667C5DCD}|ProductService.API\\ProductService.API.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A987CCF4-8441-40C1-980F-D95B667C5DCD}|ProductService.API\\ProductService.API.csproj|solutionrelative:productservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A987CCF4-8441-40C1-980F-D95B667C5DCD}|ProductService.API\\ProductService.API.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.api\\productservice.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A987CCF4-8441-40C1-980F-D95B667C5DCD}|ProductService.API\\ProductService.API.csproj|solutionrelative:productservice.api\\productservice.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74447A78-D80A-4D47-9A46-DC4FD6EDBA4A}|ProductService.Infrastructure\\ProductService.Infrastructure.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.infrastructure\\productservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{74447A78-D80A-4D47-9A46-DC4FD6EDBA4A}|ProductService.Infrastructure\\ProductService.Infrastructure.csproj|solutionrelative:productservice.infrastructure\\productservice.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A18EAB1-65B7-4072-8091-EC872BB72276}|ProductService.Domain\\ProductService.Domain.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.domain\\productservice.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5A18EAB1-65B7-4072-8091-EC872BB72276}|ProductService.Domain\\ProductService.Domain.csproj|solutionrelative:productservice.domain\\productservice.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA886F1-D229-4449-9CE8-4328E2F42B41}|ProductService.Application\\ProductService.Application.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.application\\productservice.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3FA886F1-D229-4449-9CE8-4328E2F42B41}|ProductService.Application\\ProductService.Application.csproj|solutionrelative:productservice.application\\productservice.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A987CCF4-8441-40C1-980F-D95B667C5DCD}|ProductService.API\\ProductService.API.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A987CCF4-8441-40C1-980F-D95B667C5DCD}|ProductService.API\\ProductService.API.csproj|solutionrelative:productservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A987CCF4-8441-40C1-980F-D95B667C5DCD}|ProductService.API\\ProductService.API.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A987CCF4-8441-40C1-980F-D95B667C5DCD}|ProductService.API\\ProductService.API.csproj|solutionrelative:productservice.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74447A78-D80A-4D47-9A46-DC4FD6EDBA4A}|ProductService.Infrastructure\\ProductService.Infrastructure.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.infrastructure\\persistence\\productdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74447A78-D80A-4D47-9A46-DC4FD6EDBA4A}|ProductService.Infrastructure\\ProductService.Infrastructure.csproj|solutionrelative:productservice.infrastructure\\persistence\\productdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74447A78-D80A-4D47-9A46-DC4FD6EDBA4A}|ProductService.Infrastructure\\ProductService.Infrastructure.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.infrastructure\\persistence\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74447A78-D80A-4D47-9A46-DC4FD6EDBA4A}|ProductService.Infrastructure\\ProductService.Infrastructure.csproj|solutionrelative:productservice.infrastructure\\persistence\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA886F1-D229-4449-9CE8-4328E2F42B41}|ProductService.Application\\ProductService.Application.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.application\\features\\products\\commands\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA886F1-D229-4449-9CE8-4328E2F42B41}|ProductService.Application\\ProductService.Application.csproj|solutionrelative:productservice.application\\features\\products\\commands\\createproductcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FA886F1-D229-4449-9CE8-4328E2F42B41}|ProductService.Application\\ProductService.Application.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.application\\features\\products\\commands\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FA886F1-D229-4449-9CE8-4328E2F42B41}|ProductService.Application\\ProductService.Application.csproj|solutionrelative:productservice.application\\features\\products\\commands\\createproductcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A18EAB1-65B7-4072-8091-EC872BB72276}|ProductService.Domain\\ProductService.Domain.csproj|c:\\users\\azeze\\source\\repos\\microservices\\productservice.domain\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5A18EAB1-65B7-4072-8091-EC872BB72276}|ProductService.Domain\\ProductService.Domain.csproj|solutionrelative:productservice.domain\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Domain\\entities\\Product.cs",
+              "RelativeDocumentMoniker": "ProductService.Domain\\entities\\Product.cs",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Domain\\entities\\Product.cs",
+              "RelativeToolTip": "ProductService.Domain\\entities\\Product.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-28T13:18:39.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductService.API.csproj",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.API\\ProductService.API.csproj",
+              "RelativeDocumentMoniker": "ProductService.API\\ProductService.API.csproj",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.API\\ProductService.API.csproj",
+              "RelativeToolTip": "ProductService.API\\ProductService.API.csproj",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-26T20:05:01.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductService.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Infrastructure\\ProductService.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "ProductService.Infrastructure\\ProductService.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Infrastructure\\ProductService.Infrastructure.csproj",
+              "RelativeToolTip": "ProductService.Infrastructure\\ProductService.Infrastructure.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-26T20:04:55.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductService.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Domain\\ProductService.Domain.csproj",
+              "RelativeDocumentMoniker": "ProductService.Domain\\ProductService.Domain.csproj",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Domain\\ProductService.Domain.csproj",
+              "RelativeToolTip": "ProductService.Domain\\ProductService.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-26T20:18:38.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.API\\Program.cs",
+              "RelativeDocumentMoniker": "ProductService.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.API\\Program.cs",
+              "RelativeToolTip": "ProductService.API\\Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAcwCgAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:50:48.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProductService.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Application\\ProductService.Application.csproj",
+              "RelativeDocumentMoniker": "ProductService.Application\\ProductService.Application.csproj",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Application\\ProductService.Application.csproj",
+              "RelativeToolTip": "ProductService.Application\\ProductService.Application.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-26T20:05:01.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.API\\appsettings.json",
+              "RelativeDocumentMoniker": "ProductService.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.API\\appsettings.json",
+              "RelativeToolTip": "ProductService.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-27T18:06:46.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.API\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "ProductService.API\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.API\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "ProductService.API\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAowBgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T18:53:37.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Infrastructure\\Persistence\\ProductDbContext.cs",
+              "RelativeDocumentMoniker": "ProductService.Infrastructure\\Persistence\\ProductDbContext.cs",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Infrastructure\\Persistence\\ProductDbContext.cs",
+              "RelativeToolTip": "ProductService.Infrastructure\\Persistence\\ProductDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:46:38.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateProductCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Application\\Features\\Products\\Commands\\CreateProductCommandHandler.cs",
+              "RelativeDocumentMoniker": "ProductService.Application\\Features\\Products\\Commands\\CreateProductCommandHandler.cs",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Application\\Features\\Products\\Commands\\CreateProductCommandHandler.cs",
+              "RelativeToolTip": "ProductService.Application\\Features\\Products\\Commands\\CreateProductCommandHandler.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:40:58.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CreateProductCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Application\\Features\\Products\\Commands\\CreateProductCommand.cs",
+              "RelativeDocumentMoniker": "ProductService.Application\\Features\\Products\\Commands\\CreateProductCommand.cs",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Application\\Features\\Products\\Commands\\CreateProductCommand.cs",
+              "RelativeToolTip": "ProductService.Application\\Features\\Products\\Commands\\CreateProductCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:39:26.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Domain\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "ProductService.Domain\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Domain\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "ProductService.Domain\\Interfaces\\IProductRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-26T20:23:25.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Infrastructure\\Persistence\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "ProductService.Infrastructure\\Persistence\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Infrastructure\\Persistence\\ProductRepository.cs",
+              "RelativeToolTip": "ProductService.Infrastructure\\Persistence\\ProductRepository.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wCsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T17:47:09.169Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

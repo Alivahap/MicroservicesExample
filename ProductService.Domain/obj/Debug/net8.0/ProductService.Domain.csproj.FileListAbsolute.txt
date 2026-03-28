@@ -1,0 +1,11 @@
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\bin\Debug\net8.0\ProductService.Domain.deps.json
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\bin\Debug\net8.0\ProductService.Domain.dll
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\bin\Debug\net8.0\ProductService.Domain.pdb
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.AssemblyInfoInputs.cache
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.AssemblyInfo.cs
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.dll
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\refint\ProductService.Domain.dll
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\ProductService.Domain.pdb
+C:\Users\Azeze\source\repos\Microservices\ProductService.Domain\obj\Debug\net8.0\ref\ProductService.Domain.dll
