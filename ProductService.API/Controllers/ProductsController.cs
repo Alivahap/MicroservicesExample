@@ -2,6 +2,10 @@
 using Microsoft.AspNetCore.Mvc;
 using ProductService.Application.Features.Products.Commands;
 using ProductService.Application.Features.Products.Queries;
+using Microsoft.AspNetCore.Authorization;
+
+
+
 namespace ProductService.API.Controllers
 {
     [ApiController]
@@ -22,7 +26,19 @@ namespace ProductService.API.Controllers
             return Ok(id);
         }
 	
+[HttpPut("{id}")]
+[Authorize] // JWT doğrulaması 
+public async Task<IActionResult> Update(Guid id, UpdateProductCommand command)
+{
+    if (id != command.Id)
+        return BadRequest("Id uyuşmuyor");
 
+    var result = await _mediator.Send(command);
+    if (!result)
+        return NotFound();
+
+    return NoContent();
+}
 	[HttpGet]
 	public async Task<IActionResult> GetAll()
 	{
