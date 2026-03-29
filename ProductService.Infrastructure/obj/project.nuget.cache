@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "i04/WkrDSCQ=",
+  "dgSpecHash": "gwAYzdOk1rA=",
   "success": true,
   "projectFilePath": "C:\\Users\\Azeze\\source\\repos\\Microservices\\ProductService.Infrastructure\\ProductService.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,7 @@
     "C:\\Users\\Azeze\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\Azeze\\.nuget\\packages\\serilog\\4.3.1\\serilog.4.3.1.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\stackexchange.redis\\2.12.8\\stackexchange.redis.2.12.8.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\Azeze\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",

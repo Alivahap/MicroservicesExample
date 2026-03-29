@@ -1,0 +1,49 @@
+2026-03-29 17:22:17.938 +03:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-03-29 17:22:19.640 +03:00 [INF] Executed DbCommand (284ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2026-03-29 17:22:19.735 +03:00 [INF] User profile is available. Using 'C:\Users\Azeze\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-29 17:22:19.930 +03:00 [INF] Now listening on: http://localhost:5048
+2026-03-29 17:22:19.937 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-29 17:22:19.939 +03:00 [INF] Hosting environment: Development
+2026-03-29 17:22:19.940 +03:00 [INF] Content root path: C:\Users\Azeze\source\repos\Microservices\ProductService.API
+2026-03-29 17:22:40.689 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/index.html - null null
+2026-03-29 17:22:41.046 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/index.html - 200 null text/html;charset=utf-8 361.4057ms
+2026-03-29 17:22:42.556 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - null null
+2026-03-29 17:22:42.748 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5048/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 193.7501ms
+2026-03-29 17:22:57.505 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5048/api/Auth/login - application/json 54
+2026-03-29 17:22:57.645 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-29 17:22:57.651 +03:00 [INF] Executing endpoint 'AuthController.Login (ProductService.API)'
+2026-03-29 17:22:57.706 +03:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ProductService.API.Models.LoginRequest) on controller AuthController (ProductService.API).
+2026-03-29 17:22:59.318 +03:00 [INF] Executed DbCommand (1,243ms) [Parameters=[@__request_UserName_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[PasswordHash], [u].[Role], [u].[UserName]
+FROM [Users] AS [u]
+WHERE [u].[UserName] = @__request_UserName_0
+2026-03-29 17:23:00.586 +03:00 [INF] Executed DbCommand (851ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RefreshTokens] ([Id], [Created], [Expires], [Role], [Token], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-03-29 17:23:00.636 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-29 17:23:00.683 +03:00 [INF] Executed action AuthController.Login (ProductService.API) in 2964.7943ms
+2026-03-29 17:23:00.688 +03:00 [INF] Executed endpoint 'AuthController.Login (ProductService.API)'
+2026-03-29 17:23:00.701 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5048/api/Auth/login - 200 null application/json; charset=utf-8 3195.1738ms
+2026-03-29 17:23:28.272 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost:5048/api/Products - application/json 50
+2026-03-29 17:23:28.371 +03:00 [INF] Executing endpoint 'ProductService.API.Controllers.ProductsController.Create (ProductService.API)'
+2026-03-29 17:23:28.382 +03:00 [INF] Route matched with {action = "Create", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ProductService.Application.Features.Products.Commands.CreateProductCommand) on controller ProductService.API.Controllers.ProductsController (ProductService.API).
+2026-03-29 17:23:28.713 +03:00 [INF] Executed DbCommand (148ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p4='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [CreatedAt], [Name], [Price], [Stock])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+2026-03-29 17:23:31.084 +03:00 [INF] Ürün oluşturuldu: "d9e1994b-72b0-4c37-92f4-466165f8c4b2", Name: string, Price: 0
+2026-03-29 17:23:31.097 +03:00 [INF] Product created: "d9e1994b-72b0-4c37-92f4-466165f8c4b2"
+2026-03-29 17:23:31.102 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Guid'.
+2026-03-29 17:23:31.110 +03:00 [INF] Executed action ProductService.API.Controllers.ProductsController.Create (ProductService.API) in 2724.4168ms
+2026-03-29 17:23:31.113 +03:00 [INF] Executed endpoint 'ProductService.API.Controllers.ProductsController.Create (ProductService.API)'
+2026-03-29 17:23:31.115 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost:5048/api/Products - 200 null application/json; charset=utf-8 2843.1423ms
+2026-03-29 17:25:05.621 +03:00 [INF] Application is shutting down...

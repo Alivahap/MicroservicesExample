@@ -170,6 +170,22 @@
           }
         }
       },
+      "Serilog/4.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Serilog.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Serilog.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Serilog.targets": {}
+        }
+      },
       "StackExchange.Redis/2.12.8": {
         "type": "package",
         "dependencies": {
@@ -539,6 +555,35 @@
         "pipelines.sockets.unofficial.nuspec"
       ]
     },
+    "Serilog/4.3.1": {
+      "sha512": "savYe7h5yRlkqBVOwP8cIRDOdqKiPmYCU4W87JH38sBmcKD5EBoXvQIw6bNEvZ/pTe1gsiye3VFCzBsoppGkXQ==",
+      "type": "package",
+      "path": "serilog/4.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Serilog.targets",
+        "buildTransitive/Serilog.targets",
+        "icon.png",
+        "lib/net10.0/Serilog.dll",
+        "lib/net10.0/Serilog.xml",
+        "lib/net462/Serilog.dll",
+        "lib/net462/Serilog.xml",
+        "lib/net471/Serilog.dll",
+        "lib/net471/Serilog.xml",
+        "lib/net6.0/Serilog.dll",
+        "lib/net6.0/Serilog.xml",
+        "lib/net8.0/Serilog.dll",
+        "lib/net8.0/Serilog.xml",
+        "lib/net9.0/Serilog.dll",
+        "lib/net9.0/Serilog.xml",
+        "lib/netstandard2.0/Serilog.dll",
+        "lib/netstandard2.0/Serilog.xml",
+        "serilog.4.3.1.nupkg.sha512",
+        "serilog.nuspec"
+      ]
+    },
     "StackExchange.Redis/2.12.8": {
       "sha512": "I2x/MZ+I0YR2KYYOtlIaEq0Thd+Uhioao6BIaEs+U1MeGkbJF+peLtoZucJwHmfrFxMDXAzWOZrLnOQqPgyGvA==",
       "type": "package",
@@ -658,6 +703,7 @@
       "MediatR.Extensions.Microsoft.DependencyInjection >= 10.0.0",
       "Microsoft.Extensions.Caching.StackExchangeRedis >= 10.0.5",
       "ProductService.Domain >= 1.0.0",
+      "Serilog >= 4.3.1",
       "StackExchange.Redis >= 2.12.8"
     ]
   },
@@ -726,6 +772,10 @@
           "Microsoft.Extensions.Caching.StackExchangeRedis": {
             "target": "Package",
             "version": "[10.0.5, )"
+          },
+          "Serilog": {
+            "target": "Package",
+            "version": "[4.3.1, )"
           },
           "StackExchange.Redis": {
             "target": "Package",

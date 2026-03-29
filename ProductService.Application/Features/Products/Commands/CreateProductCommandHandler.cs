@@ -4,6 +4,7 @@ using ProductService.Domain.Interfaces;
 using ProductService.Application.Events;
 using ProductService.Domain.Events;
 using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Logging;
 
 namespace ProductService.Application.Features.Products.Commands
 {
@@ -12,15 +13,18 @@ namespace ProductService.Application.Features.Products.Commands
         private readonly IProductRepository _repository;
         private readonly IEventPublisher _eventPublisher;
         private readonly IDistributedCache _cache;
+        private readonly ILogger<CreateProductCommandHandler> _logger;
 
         public CreateProductCommandHandler(
             IProductRepository repository,
             IEventPublisher eventPublisher,
-            IDistributedCache cache)
+            IDistributedCache cache,
+            ILogger<CreateProductCommandHandler> logger)
         {
             _repository = repository;
             _eventPublisher = eventPublisher;
             _cache = cache;
+            _logger = logger;
         }
 
         public async Task<Guid> Handle(CreateProductCommand request, CancellationToken cancellationToken)
@@ -36,10 +40,14 @@ namespace ProductService.Application.Features.Products.Commands
 
             await _repository.AddAsync(product);
 
-            //  Cache temizleme (ÇOK ÖNEMLİ)
-            await _cache.RemoveAsync("products_list");
+            // Cache temizleme
+            await _cache.RemoveAsync("products_list", cancellationToken);
 
-            //  Event fırlatma
+            // ✅ Logger kullanımı
+            _logger.LogInformation("Ürün oluşturuldu: {ProductId}, Name: {Name}, Price: {Price}", 
+                product.Id, product.Name, product.Price);
+
+            // Event fırlatma
             var productCreatedEvent = new ProductCreatedEvent
             {
                 ProductId = product.Id,

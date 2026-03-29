@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using ProductService.Application.Features.Products.Commands;
 using ProductService.Application.Features.Products.Queries;
 using Microsoft.AspNetCore.Authorization;
+using Serilog;
 
 namespace ProductService.API.Controllers
 {
@@ -22,22 +23,29 @@ namespace ProductService.API.Controllers
         public async Task<IActionResult> Create(CreateProductCommand command)
         {
             var id = await _mediator.Send(command);
+			 Log.Information("Product created: {ProductId}", id);
             return Ok(id);
         }
         
         [HttpPut("{id}")]
         [Authorize(Roles = "Admin")] 
-        public async Task<IActionResult> Update(Guid id, UpdateProductCommand command)
-        {
-            if (id != command.Id)
-                return BadRequest("Id uyuşmuyor");
+       public async Task<IActionResult> Update(Guid id, UpdateProductCommand command)
+{
+    if (id != command.Id)
+        return BadRequest("Id uyuşmuyor");
 
-            var result = await _mediator.Send(command);
-            if (!result)
-                return NotFound();
+    var result = await _mediator.Send(command);
 
-            return NoContent();
-        }
+    if (!result)
+    {
+        Log.Warning("Product not found: {ProductId}", id);
+        return NotFound();
+    }
+
+    Log.Information("Product updated: {ProductId}", id);
+
+    return NoContent();
+}
 
         [HttpGet]
         public async Task<IActionResult> GetAll()

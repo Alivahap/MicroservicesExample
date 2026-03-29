@@ -12,15 +12,22 @@ using StackExchange.Redis;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Serilog;
 
-// builder
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .Enrich.FromLogContext()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
 var builder = WebApplication.CreateBuilder(args);
 
 // JWT key
 var jwtKey = builder.Configuration["Jwt:Key"];
 var key = Encoding.ASCII.GetBytes(jwtKey);
 
-// JWT auth
+// JWT auth + Serilog
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -37,6 +44,9 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
+// Serilog
+builder.Host.UseSerilog();
+
 // Controller ve diğer servisler
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -52,6 +62,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
     options.InstanceName = "ProductService_";
 });
 
+// Swagger JWT config
 builder.Services.AddSwaggerGen(c =>
 {
     c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
