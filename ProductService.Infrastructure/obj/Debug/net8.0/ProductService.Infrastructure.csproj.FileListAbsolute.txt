@@ -11,10 +11,10 @@ C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debu
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.AssemblyInfo.cs
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.sourcelink.json
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductS.4D387919.Up2Date
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.dll
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\refint\ProductService.Infrastructure.dll
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.pdb
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.genruntimeconfig.cache
 C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ref\ProductService.Infrastructure.dll
-C:\Users\Azeze\source\repos\Microservices\ProductService.Infrastructure\obj\Debug\net8.0\ProductService.Infrastructure.sourcelink.json

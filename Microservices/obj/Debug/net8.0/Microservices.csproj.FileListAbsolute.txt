@@ -26,10 +26,10 @@ C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\staticw
 C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\Microser.3ABC5EC4.Up2Date
 C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\Microservices.dll
 C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\refint\Microservices.dll
 C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\Microservices.pdb
 C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\Microservices.genruntimeconfig.cache
 C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\ref\Microservices.dll
+C:\Users\Azeze\source\repos\Microservices\Microservices\obj\Debug\net8.0\Microservices.sourcelink.json

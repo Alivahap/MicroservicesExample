@@ -17,5 +17,7 @@ namespace ProductService.Infrastructure.Persistence
         }
 
         public DbSet<Product> Products { get; set; }
+		public DbSet<RefreshToken> RefreshTokens { get; set; } = null!;
+		public DbSet<User> Users { get; set; } = null!;
     }
 }

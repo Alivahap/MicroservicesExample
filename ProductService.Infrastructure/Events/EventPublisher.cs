@@ -13,5 +13,10 @@ namespace ProductService.Infrastructure.Events
             Console.WriteLine($"Event Fırlatıldı: ProductCreated | {@event.ProductId} | {@event.Name}");
             return Task.CompletedTask;
         }
+		public Task PublishProductUpdatedAsync(ProductUpdatedEvent @event)
+	{	
+		Console.WriteLine($"Event Fırlatıldı: ProductUpdated | {@event.ProductId} | {@event.Name}");
+		return Task.CompletedTask;
+	}
     }
 }

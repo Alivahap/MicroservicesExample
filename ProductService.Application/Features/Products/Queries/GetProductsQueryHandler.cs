@@ -3,7 +3,6 @@ using ProductService.Domain.Entities;
 using ProductService.Domain.Interfaces;
 using Microsoft.Extensions.Caching.Distributed;
 using System.Text.Json;
-using Microsoft.Extensions.Caching.Distributed;
 
 namespace ProductService.Application.Features.Products.Queries
 {
@@ -21,20 +20,28 @@ namespace ProductService.Application.Features.Products.Queries
         public async Task<List<Product>> Handle(GetProductsQuery request, CancellationToken cancellationToken)
         {
             var cacheKey = "products_list";
+
+            //  Cache kontrol
             var cachedData = await _cache.GetStringAsync(cacheKey);
             if (!string.IsNullOrEmpty(cachedData))
             {
                 return JsonSerializer.Deserialize<List<Product>>(cachedData)!;
             }
 
+            //  DB'den çekme
             var products = await _repository.GetAllAsync();
 
+            //  Cache'e yazma
             var cacheOptions = new DistributedCacheEntryOptions
             {
-                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5) // 5 dk cache
+                AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5)
             };
 
-            await _cache.SetStringAsync(cacheKey, JsonSerializer.Serialize(products), cacheOptions);
+            await _cache.SetStringAsync(
+                cacheKey,
+                JsonSerializer.Serialize(products),
+                cacheOptions
+            );
 
             return products;
         }
