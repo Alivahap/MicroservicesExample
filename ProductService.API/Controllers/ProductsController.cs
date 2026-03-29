@@ -4,8 +4,6 @@ using ProductService.Application.Features.Products.Commands;
 using ProductService.Application.Features.Products.Queries;
 using Microsoft.AspNetCore.Authorization;
 
-
-
 namespace ProductService.API.Controllers
 {
     [ApiController]
@@ -20,31 +18,33 @@ namespace ProductService.API.Controllers
         }
 
         [HttpPost]
+		[Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create(CreateProductCommand command)
         {
             var id = await _mediator.Send(command);
             return Ok(id);
         }
-	
-[HttpPut("{id}")]
-[Authorize] // JWT doğrulaması 
-public async Task<IActionResult> Update(Guid id, UpdateProductCommand command)
-{
-    if (id != command.Id)
-        return BadRequest("Id uyuşmuyor");
+        
+        [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")] 
+        public async Task<IActionResult> Update(Guid id, UpdateProductCommand command)
+        {
+            if (id != command.Id)
+                return BadRequest("Id uyuşmuyor");
 
-    var result = await _mediator.Send(command);
-    if (!result)
-        return NotFound();
+            var result = await _mediator.Send(command);
+            if (!result)
+                return NotFound();
 
-    return NoContent();
-}
-	[HttpGet]
-	public async Task<IActionResult> GetAll()
-	{
-		var query = new GetProductsQuery();
-		var products = await _mediator.Send(query);
-		return Ok(products);
-	}
+            return NoContent();
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var query = new GetProductsQuery();
+            var products = await _mediator.Send(query);
+            return Ok(products);
+        }
     }
 }

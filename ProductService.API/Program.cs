@@ -1,7 +1,7 @@
 ﻿using ProductService.Infrastructure.Persistence;
 using ProductService.Infrastructure.Repositories;
+using ProductService.Domain.Entities;
 using ProductService.Domain.Interfaces;
-
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ProductService.Application.Features.Products.Commands;
@@ -13,14 +13,14 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-// builder 
+// builder
 var builder = WebApplication.CreateBuilder(args);
 
 // JWT key
 var jwtKey = builder.Configuration["Jwt:Key"];
 var key = Encoding.ASCII.GetBytes(jwtKey);
 
-//  JWT auth
+// JWT auth
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -91,7 +91,33 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-
 app.MapControllers();
+
+// Seed kullanıcı ekleme
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<ProductDbContext>();
+
+    if (!context.Users.Any())
+    {
+        var adminHash = Convert.ToBase64String(System.Security.Cryptography.SHA256.HashData(Encoding.UTF8.GetBytes("password123")));
+        context.Users.Add(new User
+        {
+            UserName = "admin",
+            PasswordHash = adminHash,
+            Role = "Admin"
+        });
+
+        var managerHash = Convert.ToBase64String(System.Security.Cryptography.SHA256.HashData(Encoding.UTF8.GetBytes("manager123")));
+        context.Users.Add(new User
+        {
+            UserName = "manager",
+            PasswordHash = managerHash,
+            Role = "Manager"
+        });
+
+        context.SaveChanges();
+    }
+}
 
 app.Run();

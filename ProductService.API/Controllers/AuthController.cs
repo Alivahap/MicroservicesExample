@@ -4,16 +4,17 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using ProductService.Domain.Entities; // RefreshToken modeli
-using ProductService.Infrastructure.Persistence; // DbContext
+using ProductService.Domain.Entities;
+using ProductService.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
+using ProductService.API.Models;
 
 [ApiController]
 [Route("api/[controller]")]
 public class AuthController : ControllerBase
 {
     private readonly IConfiguration _config;
-    private readonly ProductDbContext _context; // refresh token DB için
+    private readonly ProductDbContext _context;
 
     public AuthController(IConfiguration config, ProductDbContext context)
     {
@@ -21,46 +22,57 @@ public class AuthController : ControllerBase
         _context = context;
     }
 
-    [HttpPost("login")]
-    public async Task<IActionResult> Login()
+  [HttpPost("login")]
+public async Task<IActionResult> Login([FromBody] LoginRequest request)
+{
+    // Kullanıcıyı veritabanından bul
+    var user = await _context.Users.FirstOrDefaultAsync(u => u.UserName == request.UserName);
+    if (user == null)
+        return Unauthorized("Kullanıcı bulunamadı");
+
+    // Şifre doğrulama 
+    var hash = Convert.ToBase64String(System.Security.Cryptography.SHA256.HashData(Encoding.UTF8.GetBytes(request.Password)));
+    if (user.PasswordHash != hash)
+        return Unauthorized("Şifre yanlış");
+
+    var key = Encoding.ASCII.GetBytes(_config["Jwt:Key"]);
+
+    var claims = new[]
     {
-        // JWT key
-        var key = Encoding.ASCII.GetBytes(_config["Jwt:Key"]);
+        new Claim(ClaimTypes.Name, user.UserName),
+        new Claim(ClaimTypes.Role, user.Role)
+    };
 
-        // JWT oluştur
-        var tokenHandler = new JwtSecurityTokenHandler();
-        var tokenDescriptor = new SecurityTokenDescriptor
-        {
-            Subject = new ClaimsIdentity(new[]
-            {
-                new Claim(ClaimTypes.Name, "testuser")
-            }),
-            Expires = DateTime.UtcNow.AddMinutes(15), // kısa ömürlü JWT
-            SigningCredentials = new SigningCredentials(
-                new SymmetricSecurityKey(key),
-                SecurityAlgorithms.HmacSha256Signature)
-        };
-        var token = tokenHandler.CreateToken(tokenDescriptor);
-        var jwtToken = tokenHandler.WriteToken(token);
+    var tokenHandler = new JwtSecurityTokenHandler();
+    var tokenDescriptor = new SecurityTokenDescriptor
+    {
+        Subject = new ClaimsIdentity(claims),
+        Expires = DateTime.UtcNow.AddMinutes(15),
+        SigningCredentials = new SigningCredentials(
+            new SymmetricSecurityKey(key),
+            SecurityAlgorithms.HmacSha256Signature)
+    };
 
-        // Refresh token oluştur
-        var refreshToken = new RefreshToken
-        {
-            Token = Convert.ToBase64String(RandomNumberGenerator.GetBytes(64)),
-            Expires = DateTime.UtcNow.AddDays(7),
-            UserName = "testuser"
-        };
+    var token = tokenHandler.CreateToken(tokenDescriptor);
+    var jwtToken = tokenHandler.WriteToken(token);
 
-        // DB'ye kaydet
-        _context.RefreshTokens.Add(refreshToken);
-        await _context.SaveChangesAsync();
+    var refreshToken = new RefreshToken
+    {
+        Token = Convert.ToBase64String(RandomNumberGenerator.GetBytes(64)),
+        Expires = DateTime.UtcNow.AddDays(7),
+        UserName = user.UserName,
+        Role = user.Role
+    };
 
-        return Ok(new
-        {
-            token = jwtToken,
-            refreshToken = refreshToken.Token
-        });
-    }
+    _context.RefreshTokens.Add(refreshToken);
+    await _context.SaveChangesAsync();
+
+    return Ok(new
+    {
+        token = jwtToken,
+        refreshToken = refreshToken.Token
+    });
+}
 
     [HttpPost("refresh-token")]
     public async Task<IActionResult> Refresh([FromBody] string refreshToken)
@@ -69,24 +81,25 @@ public class AuthController : ControllerBase
             .FirstOrDefaultAsync(t => t.Token == refreshToken);
 
         if (token == null || token.IsExpired)
-            return Unauthorized("Refresh token geçersiz veya süresi dolmuş.");
+            return Unauthorized();
 
-        // JWT key
         var key = Encoding.ASCII.GetBytes(_config["Jwt:Key"]);
-
-        // Yeni JWT oluştur
         var tokenHandler = new JwtSecurityTokenHandler();
+        var claims = new[]
+        {
+            new Claim(ClaimTypes.Name, token.UserName),
+            new Claim(ClaimTypes.Role, token.Role)
+        };
+
         var tokenDescriptor = new SecurityTokenDescriptor
         {
-            Subject = new ClaimsIdentity(new[]
-            {
-                new Claim(ClaimTypes.Name, token.UserName)
-            }),
+            Subject = new ClaimsIdentity(claims),
             Expires = DateTime.UtcNow.AddMinutes(15),
             SigningCredentials = new SigningCredentials(
                 new SymmetricSecurityKey(key),
                 SecurityAlgorithms.HmacSha256Signature)
         };
+
         var newToken = tokenHandler.CreateToken(tokenDescriptor);
         var jwtToken = tokenHandler.WriteToken(newToken);
 
